@@ -27,13 +27,13 @@ pip install python-dotenv[cli]
 dotenv -f .env run ./manage.py migrate
 ```
 
-### Запуск сервера для разработки
+## Запуск сервера для разработки
 
 ```sh
 dotenv -f .env run ./manage.py runserver
 ```
 
-### Запуск Celery(нужен Redis Server)
+## Запуск Celery(нужен Redis Server)
 
 ```sh
 dotenv -f .env run celery -A csvreader worker -l INFO
